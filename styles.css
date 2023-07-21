@@ -1,0 +1,154 @@
+:root {
+  --black: #000000ff;
+  --oxford-blue: #14213dff;
+  --orange-web: #fca311ff;
+  --platinum: #e5e5e5ff;
+  --white: #ffffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--platinum);
+  color: var(--black);
+}
+
+header {
+  background-color: var(--oxford-blue);
+  color: var(--white);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--oxford-blue);
+}
+
+section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section li {
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(25% - 40px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--orange-web);
+}
+
+section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#group-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#group-list li {
+  margin-bottom: 10px;
+}
+
+#group-list li a {
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+
+#group-list li a:hover {
+  background-color: var(--oxford-blue);
+  color: var(--white);
+}
+
+a.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--oxford-blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.back-button:hover {
+  background-color: #555;
+}
+
+.copy-btn {
+  background-color: var(--orange-web);
+  border: none;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: var(--platinum);
+}
+
+.copy-btn-container {
+  background-color: var(--black);
+  padding: 10px;
+}
+
+.copy-btn-container:hover {
+  background-color: #333;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--oxford-blue);
+  color: var(--white);
+  padding: 10px;
+  text-align: center;
+}

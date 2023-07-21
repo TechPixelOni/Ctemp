@@ -1,0 +1,45 @@
+// This is the HTML for the entire page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+// The header contains the nav bar
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+// The main contains the sections
+<main>
+    // This section contains the welcome message
+    <section>
+        <h1>Welcome to Text Chat Templates</h1>
+        <p>Find and copy pre-made text chat templates</p>
+    </section>
+
+    // This section contains the list of groups
+    <section>
+        <h2>Template Groups</h2>
+        <ul id="group-list">
+            <!-- Groups will be dynamically added here -->
+        </ul>
+    </section>
+</main>
+
+// This script will run after the page is loaded
+<script src="script.js"></script>
+
+// This footer contains the copywrite message
+<footer class="footer hidden">
+    <p>&copy; 2023 Template Website. All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,261 @@
+ 1 + 1 + 1 disconnect:
+---------------------------------------------------------------------------
+"I'm sorry I missed your chat today. Please contact us again for the next available agent to help with any questions you may have. Have a great day!"
+
+Successfully cancelled template:
+---------------------------------------------------------------------------
+"I have cancelled the order. Is there anything else that you may need assistance with today?"
+
+Pre-authorization Script:
+---------------------------------------------------------------------------
+"What you would likely be seeing is the pre-authorization hold. For this, we have to request from your financial institution to hold the funds until the item is shipped. Based on their policy, this hold would fall off your account typcially within 3 - 5 business days, but their policy could be different from most banks. I would advise asking about pre-authorization with your institution for more clarification on when this hold falls off your account if you are seeing two charges at once."
+
+Returns information:
+---------------------------------------------------------------------------
+"Your shipment will be picked up the same manner it was delivered (e.g., boxed, curbside, threshold, white-glove). The freight carrier will contact you within the next 5-7 business days to schedule the pickup appointment. You'll receive an email with more information from costco_ops@operations.costco.com."
+---------------------------------------------------------------------------
+"This will take about 2 - 3 business days for this to be refunded."
+
+Costco_FAQ links:
+---------------------------------------------------------------------------
+My orders: [Link to form]
+Return FAQ: [Link to return FAQ]
+Price adjustment: [Link to form]
+Cancel order [Link to form]
+Verify membership: [Link to FAQs]
+Update account info: [Link to FAQs] 
+In-home delivery FAQs [Link to FAQs]
+Appliance FAQs: [Link to FAQs]
+Contact information: [Link to contact information]
+Feedback FAQ: [Link to feedback FAQ]
+Cookies technical help: [Link to FAQs]
+Accepted payments: [Link to FAQs]
+Return policy: [Link to FAQ]
+
+Order Related Queries:
+---------------------------------------------------------------------------
+"Okay, I have submitted a request for this to be replaced. Once this is accepted, our returns team would look into the situation. Once this concludes, they would be creating a new order. Once this order is created and ships, you would receive confirmation of shipment with the new tracking."
+
+Account Information Change FAQ:
+---------------------------------------------------------------------------
+"This FAQ article would list how to change account information"
+
+Closing Message:
+---------------------------------------------------------------------------
+"Closing bye bye."
+
+Holiday Greetings:
+---------------------------------------------------------------------------
+"Great, I am glad that I was able to help. I do hope that you have great holidays."
+
+Suggestion to Call for Assistance:
+---------------------------------------------------------------------------
+"I do also understand that you feel as though I do not understand what you are asking, but with so much time in between the chats between us, I do believe it would be better for you to call in for assistance."
+
+Email Troubleshooting:
+---------------------------------------------------------------------------
+"Have you checked your spam or junk mail folder? Sometimes emails can be mistakenly filtered into these folders, especially if you have not received emails from the sender before."
+"Make sure that you have entered the correct email address. It's possible that you may have entered the incorrect email address."
+
+Logistics Team Assistance:
+---------------------------------------------------------------------------
+"I currently do not have all of the information on this delivery, but it looks like it is being handled by our logistics team. I would recommend contacting our logistics team as they should have more information on this order's status. I will pass this to my resolutions team, and they will provide you with an update."
+
+Referral to Membership Department:
+---------------------------------------------------------------------------
+"Okay, for this, I would need to transfer you to our membership department as this is something that the warehouse handles. I apologize for being unable to assist. I wish you a great holiday season."
+
+Transfer to Membership Agent:
+---------------------------------------------------------------------------
+"Once I transfer you, it will show that I have disconnected. This is so that the membership agent can connect to this chat."
+
+Cancellation Request:
+---------------------------------------------------------------------------
+"I will submit a request to cancel this order, but I cannot guarantee that this will be cancelled."
+
+Lost Item Resolution:
+---------------------------------------------------------------------------
+"Thank you! Based on how long this has been shown to not be moving, this could be considered lost. I can look into requesting an exchange order or refund. What would be the best option for you at this time if waiting is not an option?"
+
+Item Verification:
+---------------------------------------------------------------------------
+"Could you verify one of the item's names or brands on your order for me so that I know I am looking at the correct order?"
+
+Reminder for Delivery Appointments:
+---------------------------------------------------------------------------
+Place holder
+
+Return Request Submission:
+---------------------------------------------------------------------------
+"I can certainly submit your request for a return. Our returns team will be in contact with you within the next 3 business days regarding the next steps. Do you have any additional questions?"
+
+Shipping Address Verification:
+---------------------------------------------------------------------------
+"Could I have you verify the shipping address and name on this shipping address?"
+
+Agent Availability:
+---------------------------------------------------------------------------
+"I'm sorry I missed you today. Please chat back, and any available agent will assist as best they can."
+
+Apology and Order Investigation:
+---------------------------------------------------------------------------
+"I apologize for this issue. Give me just one moment to look into this order."
+
+Verification and Assistance Offer:
+---------------------------------------------------------------------------
+"Thank you for reaching out to Costco Member Service. To ensure that we have the correct information on file, could you verify your shipping address and name on that shipping address? Then I will see what we can do for you."
+
+Reminder for Self-Service Options:
+---------------------------------------------------------------------------
+"Thank you for reaching out to Costco Member Service. I would be able to assist with this. But first, are you aware that there are self-service options that you can use to resolve this on your own? This FAQ article would help. Otherwise, let's get started. Firstly, to ensure that we have the correct information on file, could you verify your shipping address and name on that shipping address?"
+
+SR templates: 
+---------------------------------------------------------------------------
+("OrderNum") // ("Name") // The member // DejonM8389OKC
+("OrderNum") // ("Name") // The Agent ("AGENTNAME") called  // DejonM8389OKC
+("OrderNum") // ("Name") // 1 + 1 + 1 // DejonM8389OKC
+
+Optional: 
+---------------------------------------------------------------------------
+Cancel Order:
+---------------------------------------------------------------------------
+"Thank you for reaching out regarding your order. I understand that you would like to cancel your order. To assist you with this, please provide me with the following details:
+
+Order number: [Insert Order Number]
+Item(s) you wish to cancel: [Insert Item Name(s)]
+Once I have these details, I will submit a request to cancel the order on your behalf. Please note that cancellation requests are subject to review and approval, and I cannot guarantee that the order will be canceled. You will receive confirmation of the cancellation status via email or phone once it has been processed.
+
+If you have any additional questions or need further assistance, please let me know. I'm here to help!"
+
+Canadian Ecom: 
+---------------------------------------------------------------------------
+"Thank you for reaching out to Costco Member Service. I apologize for any inconvenience caused, but it appears that you have reached the wrong team for your inquiry.
+
+If you are located in Canada, I recommend contacting our dedicated Canadian Customer Service team for assistance with your specific needs. They have the expertise and resources to address your concerns accurately.
+
+You can reach the Canadian Customer Service team by phone at [Canadian Customer Service Phone Number] or by visiting the Costco Canada website and selecting the appropriate contact options.
+
+Please note that each Costco region has its own customer service team to ensure the best support for our members. If you are located outside Canada, please refer to the contact information specific to your region available on the respective Costco website.
+
+We apologize for any confusion and appreciate your understanding. If you have any further questions or need assistance with anything else, please feel free to let us know, and we'll be happy to help."
+
+Oraganize please: 
+---------------------------------------------------------------------------
+Template 1:
+Label: Transfer to Concierge Service
+Content: Okay, so I would be happy to assist but this would be outside of my scope of what I can do. You would need to contact our concierge service team. It will get you transferred now. It will say that I have disconnected this would be for the next agent to connect you to your chat.
+
+Template 2:
+Label: Price Match Policy
+Content: If you are wanting to price match with another company, unfortunately, we do not. If you purchased something online and see that the price has dropped and you purchased that item 30 days prior, we can adjust the price to the new.
+
+Template 3:
+Label: Delivery Timeframe Confirmation
+Content: You would be able to see this on the tracking you received. But the evening before your delivery, you will receive a call from our automated system with a 2-hour time frame for the delivery of your merchandise. This tracking would also be updated with the timeframe around this time as well. The default time would be 7 - 10 PM; this would not be the timeframe if you use the tracking on this order.
+
+Template 4:
+Label: In-Store Purchase Assistance
+Content: Hello, I would be happy to assist today. But unfortunately, you would need to visit your local warehouse for assistance with a purchase that was done in a warehouse. I unfortunately do not have any access to the systems they would use to assist you with this. I do apologize and hope this gets solved. If there is anything else I can help with, though, I would gladly assist.
+
+Template 5:
+Label: Replacement Request Confirmation
+Content: Okay, I have submitted a request for this to be replaced. Once this is accepted, our returns team would look into the situation. Once this concludes, they would be creating a new order. Once this order gets created and ships, you would receive confirmation of shipment with the new tracking.
+
+Template 6:
+Label: Unable to Verify Information
+Content: Okay, I could not verify the information that was provided. I am no longer able to attempt to assist here. I would double check the information that you have used for this order and chat or call back at a later time. If you have any questions that would not be related to this order or account that this was placed on, I would be happy to assist.
+
+Template 7:
+Label: Holiday Greeting and Closure
+Content: Great, I am glad that I was able to help. I do hope that you have great holidays.
+
+Template 8:
+Label: Membership Department Referral
+Content: Okay, for this, I would need to get you to our membership department. They should be able to help since this is something that the warehouse does. I do apologize; I am unable to assist.
+
+Template 9:
+Label: Lost Item Exchange or Refund
+Content: Thank you, so based on how long this has been shown to not be moving, this could be considered lost, but delays can take this long. I can look into getting an exchange order requested or even a refund for the lost item.
+
+Template 10:
+Label: New Order Request Confirmation
+Content: Okay, I am submitting this request for a new order. This should be created within two days after our returns team traces the lost item. You will be notified once shipped. This will be an email confirmation that will include tracking for the new order.
+
+Template 11:
+Label: Initial Greeting and Information Verification
+Content: Hi there $contacts.name.first!! I do apologize about this issue. I'd be more than happy to assist you today. So thank you for reaching out to Costco Member Service for assistance. I wanna ask how is your day today? while I get everything pulled up. Just one last thing, could you verify one of the item's name or brand on your order for me so that I know I am looking at the correct order?
+
+Template 12:
+Label: Delivery Appointment Reminder
+Content: This is set for delivery tomorrow; a bunch of times these are already loaded on the truck. Rescheduling it means the item takes a tour of the local area for free, getting a chance for bumps and bruises. We really encourage our members to keep the delivery appointments.
+
+Template 13:
+Label: Return Request Submission
+Content: Thank you. I can certainly submit your request for a return. Our returns team will be in contact with you within the next 3 business days on the next steps. Do you have any additional questions?
+
+Template 14:
+Label: Shipping Address Verification
+Content: Could I have you verify the shipping address and name on this shipping address?
+
+Template 15:
+Label: Missed Chat Response
+Content: I am sorry I missed you today. Please chat back, and any available agent would assist as best they can.
+
+Template 16:
+Label: Order Investigation Initiation
+Content: Again, I do apologize about this issue $contacts.name.first. Give me just one moment to look into this order.
+
+Template 17:
+Label: Order Assistance with Shipping Address Verification
+Content: Hi there $contacts.name.first! I do apologize that this is not meeting your needs. But thank you for reaching out to Costco Member Service for assistance. To ensure that we have the correct information on file, could you verify your shipping address and name on that shipping address? Then I will get right to see what we can do for you.
+
+Template 18:
+Label: Cache and Cookies Clearing Instructions
+Content: I do apologize about this issue. But thank you for reaching out to Costco Member Service for assistance. So this is an issue that we are currently aware of and have a team actively working on fixing this. One fix that consistently works at this time would be to clear your cache and cookies and make sure that you are logged in on only one device. After doing this, log in using an incognito window. To open an Incognito Window in Chrome, open the Chrome Menu in the upper-right-hand corner of the browser window and select New Incognito Window. You can also use the shortcut Shift + ⌘ + N (on macOS), or Shift + CTRL + N (on Windows/Linux).
+
+Template 19:
+Label: Initial Greeting
+Content: Hi there $contacts.name.first! Thank you for reaching out to Costco Member Service. How can I assist you today?
+
+Template 20:
+Label: Initial Greeting with Information Verification
+Content: Hi there $contacts.name.first!! I do apologize about this issue. I'd be more than happy to assist you today. So thank you for reaching out to Costco Member Service for assistance. I want to ask how is your day today? While I get everything pulled up.
+
+Template 21:
+Label: Out of Stock Notification
+Content: I do apologize, but customer service would not have information as to when an item would be back in stock, as this would be done by a buying team. Since all items are going to be "while supplies last," all items are essentially first come first serve.
+
+Template 22:
+Label: Chat Disconnection Notice
+Content: It will say that I have disconnected. This is so that the next agent would be able to connect to this chat.
+
+Template 23:
+Label: Shipping Address Verification Request
+Content: Hi there! I do apologize that this has not gotten to you. But thank you for reaching out to Costco Member Service for assistance. To ensure that we have the correct information on file, could you verify your shipping address and name on that shipping address?
+
+Template 24:
+Label: Return Request Submission Confirmation
+Content: I can certainly submit your request for a return. Our returns team will be in contact with you within the next 3 business days on the next steps. Do you have any additional questions?
+
+Template 25:
+Label: Unavailability of Stock Information
+Content: I do apologize but customer service would not have information as to when an item would be back in stock, as this would be done by a buying team. Since all items are going to be "while supplies last," all items are essentially first come first serve.
+
+Template 26:
+Label: Greeting and Information Verification
+Content: Hi there $contacts.name.first! Thank you for reaching out to Costco Member Service. How can I assist you today?
+
+Template 27:
+Label: Greeting and Information Verification
+Content: Hi there $contacts.name.first!! I do apologize about this issue. I'd be more than happy to assist you today. So thank you for reaching out to Costco Member Service for assistance. I want to ask how is your day today? While I get everything pulled up.
+
+Template 28:
+Label: Closing Greeting
+Content: I am pleased to help and hope you have a great week !
+
+Please note that some templates may have similar content, but I have labeled them differently based on their context and usage.
+
+
+
+
+

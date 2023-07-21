@@ -1,0 +1,58 @@
+[
+  {
+    "id": "compliments-complaints",
+    "name": "Experience Reports"
+  },
+  {
+    "id": "faq-articles",
+    "name": "FAQs"
+  },
+  {
+    "id": "connection-not-made",
+    "name": "Chat Not Connected"
+  },
+  {
+    "id": "department-transfers",
+    "name": "Other Departments"
+  },
+  {
+    "id": "order-cancelation",
+    "name": "Cancels"
+  },
+  {
+    "id": "post-order",
+    "name": "NUN"
+  },
+  {
+    "id": "price-adjustments",
+    "name": "Price Adjustment"
+  },
+  {
+    "id": "products",
+    "name": "Product Questions"
+  },
+  {
+    "id": "returns-and-replacement",
+    "name": "Returns / Replacements"
+  },
+  {
+    "id": "service-request",
+    "name": "Service Request Templates"
+  },
+  {
+    "id": "special-kiosk",
+    "name": "SOK Orders"
+  },
+  {
+    "id": "template-group",
+    "name": "template stuff"
+  },
+  {
+    "id": "order-tracking",
+    "name": "Tracking / Scheduleing"
+  },
+  {
+    "id": "web-issues",
+    "name": "Account Issues"
+  }
+]

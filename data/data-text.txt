@@ -1,0 +1,9 @@
+asd|No Question: Response to a General Inquiry|Hello! Thank you for reaching out to [Company Name] chat support. How may I assist you today?
+asd|following 1|Thank you for providing the details. Let me look into this for you. Please bear with me for a moment while I investigate further.
+
+qwe|Template 2: Resolution to a Complaint|Hello! I apologize for any inconvenience you may have experienced. I'm here to help resolve the issue. Could you please provide more information about the problem you're facing?
+qwe|following 2|I'm sorry to hear that you've encountered this problem. Let me investigate this matter for you and find a solution. While I work on it, I appreciate your patience.
+
+zxc|Order Status|Hello! Thank you for contacting us. I understand you're looking for information regarding your recent order. Allow me to assist you with that.
+
+
