@@ -1,16 +1,25 @@
-// Function to fetch data from a JSON file
-function fetchData(url) {
-  return fetch(url)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
-      }
-      return response.json();
-    })
-    .catch(error => {
-      console.error('Failed to fetch data:', error);
-      throw error; // Re-throw the error to propagate it
+// Function to fetch data from another JavaScript file
+function fetchAndPopulateTemplates(groupId) {
+  const templateList = document.getElementById("template-list");
+
+  // Load the external JavaScript file dynamically
+  const script = document.createElement("script");
+  script.src = "data/templates.js"; // Update the path to your JavaScript file
+  script.onload = () => {
+    // The external JavaScript file (templates.js) has been loaded
+    const templates = getTemplates(); // Assuming getTemplates() is a function defined in templates.js
+    const filteredTemplates = groupId
+      ? templates.filter((template) => template.group === groupId)
+      : templates;
+    clearChildren(templateList);
+    filteredTemplates.forEach((template) => {
+      const listItem = createTemplateListItem(template);
+      templateList.appendChild(listItem);
     });
+  };
+
+  // Append the script tag to the document to load the external JavaScript file
+  document.head.appendChild(script);
 }
 
 // Function to clear all child nodes of an element
@@ -20,7 +29,7 @@ function clearChildren(element) {
   }
 }
 
-// Function to create an element with text content
+// Function to create an element with text content and optional class
 function createElement(tag, text, className) {
   const element = document.createElement(tag);
   element.textContent = text;
@@ -32,101 +41,46 @@ function createElement(tag, text, className) {
 
 // Function to copy the template content to the clipboard
 function copyTemplate(content) {
-  navigator.clipboard.writeText(content)
+  navigator.clipboard
+    .writeText(content)
     .then(() => {
-      alert('Template copied to clipboard!');
+      alert("Template copied to clipboard!");
     })
-    .catch(error => {
-      console.error('Failed to copy template:', error);
-      // Handle the error or display an error message to the user
-    });
-}
-
-// Function to fetch groups and populate group list on page load
-document.addEventListener('DOMContentLoaded', () => {
-  const groupList = document.getElementById('group-list');
-  fetchData('/data/groups.json')
-    .then(groups => {
-      groups.forEach(group => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-        link.href = `templates.html#${group.id}`;
-        link.textContent = group.name;
-        listItem.appendChild(link);
-        groupList.appendChild(listItem);
-      });
-    })
-    .catch(error => {
-      console.error('Failed to fetch groups:', error);
-    });
-
-  const groupId = window.location.hash.slice(1);
-  if (groupId) {
-    fetchTemplatesByGroup(groupId);
-  } else {
-    fetchAllTemplates();
-  }
-});
-
-// Function to fetch templates based on group ID and populate template list
-function fetchTemplatesByGroup(groupId) {
-  const templateList = document.getElementById('template-list');
-  fetchData('/data/templates.json')
-    .then(templates => {
-      const filteredTemplates = templates.filter(template => template.group === groupId);
-      clearChildren(templateList);
-      filteredTemplates.forEach(template => {
-        const listItem = createTemplateListItem(template);
-        templateList.appendChild(listItem);
-      });
-    })
-    .catch(error => {
-      console.error('Failed to fetch templates:', error);
-    });
-}
-
-// Function to fetch all templates and populate template list
-function fetchAllTemplates() {
-  const templateList = document.getElementById('template-list');
-  fetchData('/data/templates.json')
-    .then(templates => {
-      clearChildren(templateList);
-      templates.forEach(template => {
-        const listItem = createTemplateListItem(template);
-        templateList.appendChild(listItem);
-      });
-    })
-    .catch(error => {
-      console.error('Failed to fetch templates:', error);
+    .catch((error) => {
+      console.error("Failed to copy template:", error);
     });
 }
 
 // Function to create template list items
 function createTemplateListItem(template) {
-  const listItem = document.createElement('li');
-  const titleElement = createElement('h3', template.title);
+  const listItem = document.createElement("li");
+  const titleElement = createElement("h3", template.title);
   listItem.appendChild(titleElement);
-  const copyButton = createElement('button', 'Copy', 'copy-btn');
-  copyButton.addEventListener('click', () => copyTemplate(template.content));
+  const copyButton = createElement("button", "Copy", "copy-btn");
+  copyButton.addEventListener("click", () => copyTemplate(template.content));
   listItem.appendChild(copyButton);
   return listItem;
 }
 
 // Handle hash changes and fetch templates accordingly
-window.addEventListener('hashchange', () => {
+window.addEventListener("hashchange", () => {
   const groupId = window.location.hash.slice(1);
-  if (groupId) {
-    fetchTemplatesByGroup(groupId);
-  } else {
-    fetchAllTemplates();
-  }
+  fetchAndPopulateTemplates(groupId);
+});
+
+// Function to populate group list on page load
+document.addEventListener("DOMContentLoaded", async () => {
+  const groupId = window.location.hash.slice(1);
+  fetchAndPopulateTemplates(groupId);
 });
 
 // Footer
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
   const footer = document.querySelector(".footer");
   const isScrolledToBottom = () => {
-    return window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+    return (
+      window.innerHeight + window.pageYOffset >= document.body.offsetHeight
+    );
   };
 
   const handleScroll = () => {
@@ -140,4 +94,3 @@ window.addEventListener("DOMContentLoaded", function() {
   handleScroll();
   window.addEventListener("scroll", handleScroll);
 });
-

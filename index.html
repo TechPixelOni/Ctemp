@@ -6,12 +6,13 @@
     <title>Text Chat Templates</title>
     <meta name="description" content="Find and copy pre-made text chat templates">
     <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Templates</a></li>
+                <li><a href="templates.html">Templates</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -32,10 +33,34 @@
         </section>
     </main>
 
+    <!-- Include groups.js script -->
+    <script src="data/groups.js"></script>
+    
+    <!-- Include script.js for functionality -->
     <script src="script.js"></script>
-
+    
     <footer class="footer hidden">
-        <p>&copy; 2023 Template Website. All rights reserved.</p>
+        <!-- ... Your footer content ... -->
     </footer>
+
+    <script>
+        // Function to populate group list on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            const groupList = document.getElementById('group-list');
+            try {
+                const groups = getGroups(); // Assuming getGroups() is defined in data/groups.js
+                groups.forEach(group => {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = `templates.html#${group.id}`;
+                    link.textContent = group.name;
+                    listItem.appendChild(link);
+                    groupList.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error('Failed to fetch groups:', error);
+            }
+        });
+    </script>
 </body>
 </html>
