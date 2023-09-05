@@ -39,12 +39,30 @@ function createElement(tag, text, className) {
   return element;
 }
 
-// Function to copy the template content to the clipboard
+// Function to copy the template content to the clipboard and show a message
 function copyTemplate(content) {
+  const alertMessage = "Template copied to clipboard!";
+  const alertElement = document.createElement("div");
+  alertElement.className = "alert";
+  alertElement.textContent = alertMessage;
+
   navigator.clipboard
     .writeText(content)
     .then(() => {
-      alert("Template copied to clipboard!");
+      document.body.appendChild(alertElement);
+
+      // Remove the 'hidden' class to display the message
+      setTimeout(() => {
+        alertElement.classList.remove("hidden");
+      }, 10); // Delay to ensure smooth transition
+
+      // Remove the message and add the 'hidden' class after 2 seconds
+      setTimeout(() => {
+        alertElement.classList.add("hidden");
+        setTimeout(() => {
+          document.body.removeChild(alertElement);
+        }, 300); // Wait for the transition to complete
+      }, 2000); // Hide the message after 2 seconds (2000 milliseconds)
     })
     .catch((error) => {
       console.error("Failed to copy template:", error);

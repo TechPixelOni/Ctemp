@@ -4,6 +4,7 @@
   --orange-web: #fca311ff;
   --platinum: #e5e5e5ff;
   --white: #ffffffff;
+  --Martian-blue: #0081a7ff;
 }
 
 body {
@@ -130,7 +131,7 @@ a.back-button:hover {
 }
 
 .copy-btn:hover {
-  background-color: var(--platinum);
+  background-color: var(--Martian-blue);
 }
 
 .copy-btn-container {
@@ -152,3 +153,24 @@ a.back-button:hover {
   padding: 10px;
   text-align: center;
 }
+
+.alert {
+  position: fixed;
+  top: 10px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--orange-web);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.alert.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
