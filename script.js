@@ -1,5 +1,5 @@
 // Function to fetch data from another JavaScript file
-function fetchAndPopulateTemplates(groupId) {
+function fetchAndPopulateTemplates(groupId, sortBy) {
   const templateList = document.getElementById("template-list");
 
   // Load the external JavaScript file dynamically
@@ -8,9 +8,18 @@ function fetchAndPopulateTemplates(groupId) {
   script.onload = () => {
     // The external JavaScript file (templates.js) has been loaded
     const templates = getTemplates(); // Assuming getTemplates() is a function defined in templates.js
+
+    // Sort templates based on the selected sorting method
+    if (sortBy === "title") {
+      templates.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortBy === "group") {
+      templates.sort((a, b) => a.group.localeCompare(b.group));
+    }
+
     const filteredTemplates = groupId
       ? templates.filter((template) => template.group === groupId)
       : templates;
+
     clearChildren(templateList);
     filteredTemplates.forEach((template) => {
       const listItem = createTemplateListItem(template);
