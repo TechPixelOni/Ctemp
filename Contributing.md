@@ -7,7 +7,7 @@
 - [Standards and Guidelines](#standards-and-guidelines)
   - [Theme Guidelines](#theme-guidelines)
   - [Language Guidelines](#language-guidelines)
-  - [Template Guidelines](#Template-guidelines)
+  - [Template Guidelines](#template-guidelines)
 - [Questions](#questions)
 
 ## Getting Started
