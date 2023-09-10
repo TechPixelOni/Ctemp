@@ -37,7 +37,7 @@ Before you begin, ensure you have met the following requirements:
 Follow these steps to set up and run the website on your local machine:
 
 1. Clone this repository to your local machine:
-   
+
 ```bash
 https://github.com/TechPixelOni/Ctemp.git
 ```
@@ -55,7 +55,7 @@ The website can be run directly by opening the HTML file in a web browser. There
 
 ## Contributing
 
-We welcome contributions. If you'd like to contribute to the project, please follow these guidelines:
+We welcome contributions. If you'd like to contribute to the project, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ### Development Setup
 
@@ -71,7 +71,14 @@ We welcome contributions. If you'd like to contribute to the project, please fol
 
 ## License
 
-This project is licensed under the ([MIT License](LICENSE) or http://opensource.org/licenses/MIT). You are free to use and modify the code for your purposes.
+The Ctemp website and templates included website are dual-licensed under either:
+
+- MIT License ([LICENSE-MIT](docs/LICENSE-MIT) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+- Apache License, Version 2.0 ([LICENSE-APACHE](docs/LICENSE-APACHE) or [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0))
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any
+additional terms or conditions.
 
 ## Acknowledgments
 

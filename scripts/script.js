@@ -96,3 +96,51 @@ document.addEventListener("DOMContentLoaded", async () => {
   const groupId = window.location.hash.slice(1);
   fetchAndPopulateTemplates(groupId);
 });
+
+// Function to debounce the scroll event
+function debounce(func, delay) {
+  let timer;
+  return function () {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      func.apply(context, args);
+    }, delay);
+  };
+}
+
+// Function to toggle the "hidden" class on the footer
+function toggleFooterVisibility() {
+  const footer = document.getElementById("page-footer");
+  const pageHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition + windowHeight >= pageHeight - footer.offsetHeight) {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
+}
+
+// Add a debounced event listener for scroll events with a longer delay (e.g., 500 milliseconds)
+function registerScrollListener() {
+  window.addEventListener("scroll", debounce(toggleFooterVisibility, 500));
+}
+
+// Call the function initially to set the initial state
+toggleFooterVisibility();
+
+// Call this function after dynamic content is loaded
+function loadDynamicContent() {
+  // Simulate loading dynamic content (replace this with your actual code)
+  const dynamicContent = document.createElement("div");
+  document.body.appendChild(dynamicContent);
+
+  // Call registerScrollListener after dynamic content is loaded
+  registerScrollListener();
+}
+
+// Call loadDynamicContent to load dynamic content (replace this with your actual code)
+loadDynamicContent();
