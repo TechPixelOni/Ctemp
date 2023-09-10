@@ -37,10 +37,10 @@ Before you begin, ensure you have met the following requirements:
 Follow these steps to set up and run the website on your local machine:
 
 1. Clone this repository to your local machine:
-
-   ```bash
+   
+```bash
 https://github.com/TechPixelOni/Ctemp.git
-
+```
 
 ## Usage
 
