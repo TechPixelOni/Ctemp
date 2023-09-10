@@ -39,7 +39,7 @@ Follow these steps to set up and run the website on your local machine:
 1. Clone this repository to your local machine:
 
    ```bash
-[git clone https://github.com/your-username/template-access-website.git](https://github.com/TechPixelOni/Ctemp.git)
+https://github.com/TechPixelOni/Ctemp.git
    ```
 
 ## Usage
