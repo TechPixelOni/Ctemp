@@ -123,7 +123,7 @@ const templates = [
     group: "shipping-address-verification",
     title: "Unable to verify address",
     content:
-      'It looks like the order was attempted to be shipped to a address that was not able to be verified. I very much apologize about this. For us  to be able to ship complete a order to a address we would need to be able to confirm three things. That the name is able to be confirmed to be the owner or a resident. The second thing is that it needs to not be a business address and must not be listed as something we are unable to deliver to on this article titled ""  https://customerservice.costco.com/app/answers/detail/a_id/637/kw/shipping%20restriction/related/1 ',
+      'It looks like the order was attempted to be shipped to an address that was not able to be verified. I very much apologize about this. For us to be able to ship and complete an order to an address we would need to be able to confirm three things. That the shipping name is able to be confirmed to be the owner or a resident. Second, it cannot be a business address. Third, there must not be a listed address that we are unable to deliver to based on limitations listed on the customer service article "Are there shipping limitations on Costco.com orders?"  https://customerservice.costco.com/app/answers/detail/a_id/637/kw/shipping%20restriction/related/1',
   },
   {
     group: "missed-chat",
