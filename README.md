@@ -40,7 +40,7 @@ Follow these steps to set up and run the website on your local machine:
 
    ```bash
 https://github.com/TechPixelOni/Ctemp.git
-   ```
+
 
 ## Usage
 
