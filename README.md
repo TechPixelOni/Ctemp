@@ -71,7 +71,7 @@ We welcome contributions. If you'd like to contribute to the project, please fol
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE) or http://opensource.org/licenses/MIT). You are free to use and modify the code for your purposes.
+This project is licensed under the ([MIT License](LICENSE) or http://opensource.org/licenses/MIT). You are free to use and modify the code for your purposes.
 
 ## Acknowledgments
 
