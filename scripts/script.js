@@ -1,15 +1,11 @@
 // Function to fetch data from another JavaScript file
 function fetchAndPopulateTemplates(groupId, sortBy) {
-  const templateList = document.getElementById("template-list");
-
-  // Load the external JavaScript file dynamically
+  const templateContainer = document.getElementById("template-container"); // Updated ID
   const script = document.createElement("script");
-  script.src = "data/templates.js"; // Update the path to your JavaScript file
+  script.src = "data/templates.js";
   script.onload = () => {
-    // The external JavaScript file (templates.js) has been loaded
-    const templates = getTemplates(); // Assuming getTemplates() is a function defined in templates.js
+    const templates = getTemplates();
 
-    // Sort templates based on the selected sorting method
     if (sortBy === "title") {
       templates.sort((a, b) => a.title.localeCompare(b.title));
     } else if (sortBy === "group") {
@@ -20,14 +16,13 @@ function fetchAndPopulateTemplates(groupId, sortBy) {
       ? templates.filter((template) => template.group === groupId)
       : templates;
 
-    clearChildren(templateList);
+    clearChildren(templateContainer);
     filteredTemplates.forEach((template) => {
       const listItem = createTemplateListItem(template);
-      templateList.appendChild(listItem);
+      templateContainer.appendChild(listItem); // Append to the template container
     });
   };
 
-  // Append the script tag to the document to load the external JavaScript file
   document.head.appendChild(script);
 }
 
@@ -81,6 +76,7 @@ function copyTemplate(content) {
 // Function to create template list items
 function createTemplateListItem(template) {
   const listItem = document.createElement("li");
+  listItem.classList.add("template-item"); // Add a class for styling
   const titleElement = createElement("h3", template.title);
   listItem.appendChild(titleElement);
   const copyButton = createElement("button", "Copy", "copy-btn");
@@ -99,25 +95,4 @@ window.addEventListener("hashchange", () => {
 document.addEventListener("DOMContentLoaded", async () => {
   const groupId = window.location.hash.slice(1);
   fetchAndPopulateTemplates(groupId);
-});
-
-// Footer
-window.addEventListener("DOMContentLoaded", function () {
-  const footer = document.querySelector(".footer");
-  const isScrolledToBottom = () => {
-    return (
-      window.innerHeight + window.pageYOffset >= document.body.offsetHeight
-    );
-  };
-
-  const handleScroll = () => {
-    if (isScrolledToBottom()) {
-      footer.classList.add("visible");
-    } else {
-      footer.classList.remove("visible");
-    }
-  };
-
-  handleScroll();
-  window.addEventListener("scroll", handleScroll);
 });

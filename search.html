@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Search Templates</title>
+    <meta name="description" content="Search and view text chat templates">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Create a spacer to push the search to the right -->
+        <div class="header-spacer"></div>
+        
+        <!-- Search input and button within the header -->
+        <div class="search-container">
+            <form id="search-form" action="search.html" method="get">
+                <input placeholder="Search templates..." aria-label="Search templates" type="text" id="search-input" />
+                <button type="submit" id="search-button">Search</button>
+              </form>              
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Group Templates</h1>
+            <a href="index.html" class="back-button">Back</a>
+            <ul id="search-results">
+                <!-- Templates will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Include templates.js first -->
+    <script src="data/templates.js"></script>
+    <!-- Then include search.js -->
+    <script src="scripts/search.js"></script>
+    
+    <footer class="footer hidden">
+        <!-- ... Your footer content ... -->
+    </footer>
+</body>
+</html>

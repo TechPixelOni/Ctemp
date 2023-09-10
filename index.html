@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Text Chat Templates</title>
     <meta name="description" content="Find and copy pre-made text chat templates">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,6 +18,17 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        
+        <!-- Create a spacer to push the search to the right -->
+        <div class="header-spacer"></div>
+        
+        <!-- Search input and button within the header -->
+        <div class="search-container">
+            <form id="search-form" action="search.html" method="get">
+                <input placeholder="Search templates..." aria-label="Search templates" type="text" id="search-input" />
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
     </header>
 
     <main>
@@ -60,6 +72,19 @@
             } catch (error) {
                 console.error('Failed to fetch groups:', error);
             }
+        });
+
+        // Handle form submission
+        const searchForm = document.getElementById('search-form');
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const searchInput = document.getElementById('search-input');
+            const searchTerm = searchInput.value.trim();
+            
+            // Updated code to pass search query as URL parameter
+            const url = new URL("search.html", window.location.href);
+            url.searchParams.set("query", searchTerm);
+            window.location.href = url.toString();
         });
     </script>
 </body>

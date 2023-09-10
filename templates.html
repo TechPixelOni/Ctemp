@@ -11,29 +11,39 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Templates</a></li>
+                <li><a href="">Templates</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+
+
     <main>
         <section>
             <h1>Group Templates</h1>
             <a href="index.html" class="back-button">Back</a>
-            <ul id="template-list">
+            <ul id="template-container">
                 <!-- Templates will be dynamically added here -->
             </ul>
         </section>
     </main>
 
     <footer class="footer hidden">
-        <p>&copy; 2023 Text Chat Templates. All rights reserved.</p>
+        <p> Something will go here </p>
     </footer>
 
+    <script>
+        function clearChildren(element) {
+            while (element.firstChild) {
+                element.removeChild(element.firstChild);
+            }
+        }
+    </script>
+
     <!-- Include script.js for functionality -->
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
     
     <!-- Include templates.js for template data -->
     <script src="data/templates.js"></script>

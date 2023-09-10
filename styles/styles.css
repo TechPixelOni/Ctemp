@@ -173,4 +173,81 @@ a.back-button:hover {
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
 }
+/* Style the template items */
+.template-item {
+  background-color: var(--platinum);
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Adjust the width as needed for the desired number of columns */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
+/* Style the template item title */
+.template-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--oxford-blue);
+}
+
+/* Style the template item copy button */
+.template-item .copy-btn {
+  background-color: var(--orange-web);
+  border: none;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto; /* Push the button to the bottom of the item */
+}
+
+.template-item .copy-btn:hover {
+  background-color: var(--Martian-blue);
+}
+/* Style the header */
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--oxford-blue);
+  color: var(--white);
+  padding: 10px;
+  justify-content: space-between; /* Move items to the edges */
+}
+
+/* Style the header spacer to push the search to the right */
+.header-spacer {
+  flex-grow: 1; /* Allow the spacer to grow and push the search to the right */
+}
+
+/* Style the search container within the header */
+header .search-container {
+  display: flex;
+  align-items: center;
+  order: 1; /* Change the order to move the search container to the right */
+}
+
+/* Style the search input within the header */
+header #search-input {
+  padding: 8px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px; /* Adjust the width as needed */
+}
+
+/* Style the search button within the header */
+header #search-button {
+  background-color: var(--Martian-blue);
+  border: none;
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header #search-button:hover {
+  background-color: var(--orange-web);
+}
