@@ -26,11 +26,15 @@
 
 ## Getting Started
 
+Open within a web browser to access the website.
+Alternatively, you can run the website on a local server.
+
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 - Web browser with JavaScript enabled.
+- Text editor for making changes to the website.
 
 ## Installation
 
